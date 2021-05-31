@@ -30,9 +30,9 @@ btnEdit2.addEventListener('click', function() {
 });
 
 //Fonctionnalité 5
-var navbar1 = document.querySelector('div.navbar');
-var bootstrap = document.querySelector('link');
-var navbar2 = document.querySelector('main');
+const navbar1 = document.querySelector('div.navbar');
+const bootstrap = document.querySelector('link');
+const navbar2 = document.querySelector('main');
 
 navbar1.addEventListener('dblclick', hideNavbar);
 navbar2.addEventListener('dblclick', showNavbar);
