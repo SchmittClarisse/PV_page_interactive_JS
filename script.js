@@ -30,14 +30,16 @@ btnEdit2.addEventListener('click', function() {
 });
 
 //Fonctionnalité 5
-const navbar = document.querySelector('div.navbar'); 
-const bootstrap = document.querySelector('head link'); 
-const main = document.querySelector('main'); 
+var navbar1 = document.querySelector('div.navbar');
+var bootstrap = document.querySelector('link');
+var navbar2 = document.querySelector('main');
 
-navbar.addEventListener('doubleclick', function() {     
+navbar1.addEventListener('dblclick', hideNavbar);
+navbar2.addEventListener('dblclick', showNavbar);
+
+function hideNavbar() { 
   bootstrap.setAttribute('disabled', 'disabled');
-}); 
-
-main.addEventListener('doubleclick', function() {     
+}
+function showNavbar() {
   bootstrap.removeAttribute("disabled");
-}); 
+}
